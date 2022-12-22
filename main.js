@@ -31,7 +31,7 @@ const getHourlyForecast = async ({name: city}) => {
 }
 
 const formatTemperature = (temp) => `${temp?.toFixed(1)}°`;
-const createIconUrl=(icon)=>`http://openweathermap.org/img/wn/${icon}@2x.png`
+const createIconUrl=(icon)=>`https://openweathermap.org/img/wn/${icon}@2x.png`
 
 const loadCurrentForecast = ({ name, main: { temp, temp_max, temp_min }, weather: [{ description }] }) => {
     const currentForecastElement = document.querySelector("#current-forecast");
